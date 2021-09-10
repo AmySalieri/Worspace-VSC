@@ -33,6 +33,8 @@ public class App {
         } else {
             System.out.println(t.getHypothenuse());
         }
+        System.out.println(t.getAire());
+        System.out.println(t.getPerimetre());
 
         sc.close();
     }

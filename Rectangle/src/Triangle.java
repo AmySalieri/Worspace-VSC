@@ -41,5 +41,22 @@ public class Triangle extends Figuregeo{
         }
         return rect;
     }
+
+    public double getPerimetre() {
+        ArrayList<Integer> hypo = this.findHypothenuse();
+        return (hypo.get(1) + hypo.get(0) + hypo.get(2));
+    }
+
+    public double getAire() {
+        ArrayList<Integer> hypo = this.findHypothenuse();
+        double aire;
+        if (this.isRectangle()) {
+            aire = (hypo.get(1)*hypo.get(2))/2;
+        } else {
+            double demip = this.getPerimetre()/2;
+            aire = Math.sqrt(demip*(demip - hypo.get(0))*(demip - hypo.get(1))*(demip - hypo.get(2)));
+        }
+        return aire;
+    }
     
 }
