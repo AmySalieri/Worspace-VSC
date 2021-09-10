@@ -37,13 +37,22 @@ public void setlargeur(int larg){
 }
 
 /* Cette méthode calcule le périmètre du rectangle grâce à la formule mathématique appropriée */
+@Override
 public double getPerimetre(){
     return (longueur*2 + largeur*2);
 }
 
 /* Cette méthode calcule l'aire du rectangle grâce à la formule mathématique appropriée */
+@Override
 public double getAire(){
     return (longueur*largeur);
+}
+@Override
+public void afficher(){
+    System.out.println("Rectangle:");
+    System.out.println("Largeur = " + this.getLargeur() + " et longueur = " + this.getLongueur());
+    System.out.println("Périmètre: " + this.getPerimetre());
+    System.out.println("Aire: " + this.getAire() + "cm².");
 }
 
 }

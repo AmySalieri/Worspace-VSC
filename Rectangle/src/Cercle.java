@@ -23,12 +23,21 @@ public class Cercle extends Figuregeo {
         this.rayon = r;
     }
     /* Cette méthode calcule le périmètre du cercle grâce à la formule mathématique appropriée */
+    @Override
     public double getPerimetre() {
         return (rayon*2*Math.PI);
     }
 
     /* Cette méthode calcule l'aire du cercle grâce à la formule mathématique appropriée */
+    @Override
     public double getAire() {
         return (rayon*rayon*Math.PI);
+    }
+
+    @Override
+    public void afficher(){
+        System.out.println("Cercle:");
+        System.out.println("Périmètre: " + this.getPerimetre());
+        System.out.println("Aire: " + this.getAire() + "cm².");
     }
 }

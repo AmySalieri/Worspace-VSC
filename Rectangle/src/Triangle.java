@@ -66,5 +66,17 @@ public class Triangle extends Figuregeo{
         }
         return aire; //retourne le résultat du calcul approprié
     }
+
+    @Override
+    public void afficher(){
+        System.out.println("Triangle:");
+        if (this.isRectangle()) {
+            System.out.println("Le triangle t est rectangle!");
+        } else {
+            System.out.println("Le triangle t n'est pas rectangle!");
+        }
+        System.out.println("Aire: " + this.getAire() + "cm²");
+        System.out.println("Périmètre: " + this.getPerimetre());
+    }
     
 }
