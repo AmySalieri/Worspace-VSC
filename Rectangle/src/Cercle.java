@@ -1,6 +1,6 @@
 package Rectangle.src;
 
-public class Cercle {
+public class Cercle extends Figuregeo {
     
     private int rayon;
 

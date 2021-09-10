@@ -17,6 +17,8 @@ public class App {
         System.out.println("Entrez le rayon du cercle:");
         c.setRayon(sc.nextInt());
 
+        Triangle t = new Triangle(3, 4, 5);
+
         System.out.println("Rectangle:");
         System.out.println("Largeur = " + r.getLargeur() + " et longueur = " + r.getLongueur());
         System.out.println("Périmètre: " + r.getPerimetre());
@@ -25,6 +27,12 @@ public class App {
         System.out.println("Cercle:");
         System.out.println("Périmètre: " + c.getPerimetre());
         System.out.println("Aire: " + c.getAire() + "cm².");
+
+        if (t.isRectangle()) {
+            System.out.println("Le triangle t est rectangle!");
+        } else {
+            System.out.println(t.getHypothenuse());
+        }
 
         sc.close();
     }
