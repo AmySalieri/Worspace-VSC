@@ -1,6 +1,6 @@
 package Rectangle.src;
 
-public class Rectangle {
+public class Rectangle extends Figuregeo {
     
 private int longueur;
 private int largeur;
@@ -31,11 +31,11 @@ public void setlargeur(int larg){
     largeur = larg;
 }
 
-public int getPerimetre(){
+public double getPerimetre(){
     return (longueur*2 + largeur*2);
 }
 
-public int getAire(){
+public double getAire(){
     return (longueur*largeur);
 }
 
