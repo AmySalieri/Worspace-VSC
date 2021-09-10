@@ -13,11 +13,18 @@ public class App {
         System.out.println("Entrez la largeur");
         r.setlargeur(sc.nextInt());
 
-        
+        Cercle c = new Cercle();
+        System.out.println("Entrez le rayon du cercle:");
+        c.setRayon(sc.nextInt());
+
+        System.out.println("Rectangle:");
         System.out.println("Largeur = " + r.getLargeur() + " et longueur = " + r.getLongueur());
         System.out.println("Périmètre: " + r.getPerimetre());
         System.out.println("Aire: " + r.getAire() + "cm².");
 
+        System.out.println("Cercle:");
+        System.out.println("Périmètre: " + c.getPerimetre());
+        System.out.println("Aire: " + c.getAire() + "cm².");
 
         sc.close();
     }
